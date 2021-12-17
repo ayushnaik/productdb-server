@@ -6,7 +6,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var mongoose = require('mongoose');
 
-mongoose.connect('daxs://cymplconnect.8lcjig.dax-clusters.ap-southeast-1.amazonaws.com', {
+mongoose.connect('mongodb+srv://ayush:WARmachine68@cluster0.yvdyu.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }).then(() => console.log('Connected to mongodb successful')).catch((err) => console.error(err));
